@@ -16,7 +16,7 @@ app.use(middleware.logger);
 //app.use(middleware.requireAuthentification);
 
 app.get('/about', middleware.requireAuthentification, function(req, res){
-	res.send('About us tabarnak');
+	res.send('About us tabarnak!');
 });
 
 app.use(express.static(__dirname + '/public'));
